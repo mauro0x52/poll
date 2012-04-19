@@ -70,7 +70,7 @@ app.get('/:userId/get-question', function(request, response){
  * @ autor       : Rafael Erthal
  * @ since       : 2012-04
  * 
- * @ description : Responde uma enquete
+ * @ description : Responde uma enquete 
  * 
  * @ param userId     : identificação do usuário que esta respondendo a enquete
  * @ param questionId : chave da enquete que esta sendo respondida
