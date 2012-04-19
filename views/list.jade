@@ -1,0 +1,19 @@
+doctype 5
+html(lang="en")
+    head
+        title Admin - Minienquete
+    body
+        h3 Mini enquete - Admin
+        
+        each question in questions
+            table(border = 1)
+                thead
+                    th(colspan=2)= question.question
+                tr
+                    th Opção
+                    th Usuário            
+                each answer in question.answers
+                    each user in answer.users
+                        tr
+                            td= answer.value
+                            td= user            
