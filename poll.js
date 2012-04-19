@@ -5,7 +5,7 @@ function quiz(params)
     var questionId;
     
     $.ajax({
-            url: 'http://minienquete.rafaelerthal.c9.io/' + userId + '/get-question',
+            url: 'http://empreendemia.no-ip.org:33880/' + userId + '/get-question',
             dataType     : 'jsonp',
             jsonpCallback: '__parseJSONPResponse',
             cache        : false,
@@ -30,7 +30,7 @@ function quiz(params)
                 
                 $('#quiz_send').click(function(){
                     $.ajax({
-                        url: "http://minienquete.rafaelerthal.c9.io/" + userId + "/answer-question/" + questionId + "/" + $('#quiz_answer').val(),
+                        url: "http://empreendemia.no-ip.org:33880/" + userId + "/answer-question/" + questionId + "/" + $('#quiz_answer').val(),
                         dataType     : 'jsonp',
                         jsonpCallback: '__parseJSONPResponse',
                         cache        : false,
