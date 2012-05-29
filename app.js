@@ -101,24 +101,5 @@ app.get('/:userId/answer-question/:questionId/:answerId', function(request, resp
 });   
 
 /*----------------------------------------------------------------------------*/
-/** admin
- *
- * @ autor       : Rafael Erthal
- * @ since       : 2012-04
- * 
- * @ description : Lista respostas da minienquete
- */
- 
-app.get('/admin', function(request, response){
-
-    var Question = model.Question;
-    
-    Question.find(function(error, questions) {
-        if(error) response.end('Ocorreu um erro na execução da pagina.');        
-        response.render('list', {questions : questions});
-    });        
-});    
-
-/*----------------------------------------------------------------------------*/
 
 app.listen(33880);
