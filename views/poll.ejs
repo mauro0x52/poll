@@ -34,17 +34,18 @@ function quiz(params)
                 $(target).fadeIn('slow');
                 
                 $('#quiz_send').click(function(){
-		    var option = $('[name = "quiz_answer"]').val();
+		    var option = $('[name = "quiz_answer"]:checked').val();
+		    console.log(option);
                     params.submit(option);
                     $.ajax({
-                        url: '<%=baseUrl%>' + userId + "/answer-question/" + questionId + "/" + $('[name = "quiz_answer"]').val(),
+                        url: '<%=baseUrl%>' + userId + "/answer-question/" + questionId + "/" + $('[name = "quiz_answer"]:checked').val(),
                         dataType     : 'jsonp',
                         jsonpCallback: '__parseJSONPResponse',
                         cache        : false,
                         success: function(data){
                             if(data.error !== '') $('.quiz_validation').html(data.error);
                             else{
-			        $(target).html('<span class="question">Muito obrigado pela sua resposta!<br />Caso tenha interesse em dicas sobre como produzir mais no dia a dia, confira nosso artigo: <a href="http://www.saiadolugar.com.br/dia-a-dia-do-empreendedor/as-3-diferencas-entre-a-pessoa-produtiva-e-a-pessoa-ocupada/" id="follow_up_poll" target="_blank">As 3 diferencas entre a pessoa produtiva e pessoa ocupada</a></span>');
+			        $(target).html('<span class="follow_up">Muito obrigado pela sua resposta!<br /><br />Caso tenha interesse em dicas sobre como produzir mais no dia a dia, confira nosso artigo: <a href="http://www.saiadolugar.com.br/dia-a-dia-do-empreendedor/as-3-diferencas-entre-a-pessoa-produtiva-e-a-pessoa-ocupada/" id="follow_up_poll" target="_blank">As 3 diferencas entre a pessoa produtiva e pessoa ocupada</a></span>');
 
 				$('#follow_up_poll').click(function(){
 				    params.followup(option);
