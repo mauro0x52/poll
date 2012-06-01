@@ -14,7 +14,7 @@ var mongoose = require('mongoose'),
     config = require('./config.js'),
     schema = mongoose.Schema;
     
-mongoose.connect(config.dbUrl);
+mongoose.connect('mongodb://' + config.dbUrl);
 
 /*----------------------------------------------------------------------------*/
 /** Option
