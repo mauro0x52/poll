@@ -11,4 +11,5 @@ var question = new model.Question({
 
 question.save(function(err){
     if(err) console.log(err)
+    else console.log("Pergunta cadastrada com sucesso!");
 });
