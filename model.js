@@ -11,9 +11,10 @@
  */
 
 var mongoose = require('mongoose'),
+    config = require('./config.js'),
     schema = mongoose.Schema;
     
-mongoose.connect('mongodb://empreendemia:kawasaki88@staff.mongohq.com:10034/empreendemia');
+mongoose.connect(config.dbUrl);
 
 /*----------------------------------------------------------------------------*/
 /** Option
