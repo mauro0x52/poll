@@ -28,6 +28,25 @@ app.configure(function(){
  * @ description : Retorna o script de controle do cliente side da minienquete
  */
 
+app.get('/panel', function(request,response){
+    response.header('Content-Type', 'text/html');
+ 
+    var Question = model.Question;
+    
+    Question.findOne(function(error, question) {
+        response.render('panel.ejs', {poll : question});       
+    });
+});
+
+/*----------------------------------------------------------------------------*/
+/** load 
+ *
+ * @ autor       : Rafael Erthal
+ * @ since       : 2012-04
+ * 
+ * @ description : Retorna o script de controle do cliente side da minienquete
+ */
+
 app.get('/(load)?', function(request,response){
     response.header('Content-Type', 'text/javascript');
     response.render('poll.ejs', {baseUrl : 'http://' + config.baseUrl + ':' + config.port + '/'});
