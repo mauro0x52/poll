@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Apuracao dos resultados da minienquete</title>
+    </head>
+    <body>
+        <h3>Resultados da minienquete <%=poll.question%></h3>
+	<table>
+	    <tr>
+	        <td>Resposta</td>
+		<td>Votos</td>
+	    </tr>
+	    <% for(var i=0; i<poll.answers.length; i++){%>
+	        <tr>
+	            <td><%=poll.answers[i].value%>&nbsp;&nbsp;&nbsp;</td>
+		    <td><%=poll.answers[i].users.length%></td>
+		    <td>&nbsp;</td>
+		    <% for(var j=0; j<poll.answers[i].users.length; j++){%>
+		        <td> <%=poll.answers[i].users[j]%> </td>
+		    <% } %>
+	        </tr>
+	    <% } %>
+	</table>
+    </body>
+</html>
