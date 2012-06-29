@@ -17,7 +17,7 @@ function quiz(params)
                 questionId = data.question._id;
                 
                 $(target).append("<span class='question'><span class='title'>Enquete:</span>" + data.question.question + "</span>");                
-                params.view();
+                params.view(questionId);
 
                 var answers = data.question.answers;
                 var size = answers.length;                
@@ -25,7 +25,7 @@ function quiz(params)
                 for(var i = 0; i < size; i++){
                     $(target).append("<span class='answer'><input type='radio' name='quiz_answer' id='quiz_answer" + i + "' value='" + answers[i]._id + "' />" + answers[i].value + "</span>");
                     $('#quiz_answer'+i).click(function(e){
-		        params.change($(this).val());
+		        params.change(questionId,$(this).val());
 		    });
 		}
 
@@ -48,7 +48,7 @@ function quiz(params)
 			        $(target).html('<span class="follow_up">Muito obrigado pela sua resposta!<br /><br />Caso tenha interesse em dicas sobre como produzir mais no dia a dia, confira nosso artigo: <a href="http://www.saiadolugar.com.br/dia-a-dia-do-empreendedor/as-3-diferencas-entre-a-pessoa-produtiva-e-a-pessoa-ocupada/" id="follow_up_poll" target="_blank">As 3 diferencas entre a pessoa produtiva e pessoa ocupada</a></span>');
 
 				$('#follow_up_poll').click(function(){
-				    params.followup(option);
+				    params.followup(questionId, option);
 				});
 		            }
                         }
