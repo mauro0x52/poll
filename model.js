@@ -6,7 +6,7 @@
  *  
  * @ autor       : Rafael Erthal
  * @ since       : 2012-04
- * testeee
+ * 
  * @ description : Modelagem das enquetes
  */
 
