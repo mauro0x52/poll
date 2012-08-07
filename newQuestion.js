@@ -1,7 +1,7 @@
 var model = require('./model.js');
 
 var question = new model.Question({
-    question : "O que você acha do Empreendemia ser integrado com ferramentas de gestao?",
+    question : "O que voce acha do Empreendemia ser integrado com ferramentas de gestao?",
     answers  : [
         {value : "Muito bom"},
         {value : "Bom"},
