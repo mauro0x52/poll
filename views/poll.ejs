@@ -45,7 +45,7 @@ function quiz(params)
                         success: function(data){
                             if(data.error !== '') $('.quiz_validation').html(data.error);
                             else{
-			        $(target).html('<span class="follow_up">Muito obrigado pela sua resposta! Estamos criando uma ferramenta que simplifica esse processo. Caso queira saber mais mande e-mail para contato@empreendemia.com.br</span>');
+			        $(target).html('<span class="follow_up">Muito obrigado pela sua resposta!</span>');
 
 				$('#follow_up_poll').click(function(){
 				    params.followup(questionId, option);
