@@ -45,7 +45,7 @@ function quiz(params)
                         success: function(data){
                             if(data.error !== '') $('.quiz_validation').html(data.error);
                             else{
-			        $(target).html('<span class="follow_up">Muito obrigado pela sua resposta!<br />Falando em vendas, recomendamos o artigo 3 dicas de acoes para te dar resultados rapidos no marketing da sua empresa. Para ler, clique <a href='http://www.saiadolugar.com.br/marketing/video-quais-pequenas-alteracoes-no-marketing-podem-trazer-resultados-rapidos' target='_blank'>aqui</a>.</span>');
+		        $(target).html('<span class="follow_up">Muito obrigado pela sua resposta!<br />Falando em vendas, recomendamos o artigo 3 dicas de acoes para te dar resultados rapidos no marketing da sua empresa. Para ler, clique <a href="http://www.saiadolugar.com.br/marketing/video-quais-pequenas-alteracoes-no-marketing-podem-trazer-resultados-rapidos" target="_blank">aqui</a>.</span>');
 
 				$('#follow_up_poll').click(function(){
 				    params.followup(questionId, option);
