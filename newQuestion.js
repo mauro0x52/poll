@@ -1,13 +1,14 @@
 var model = require('./model.js');
 
 var question = new model.Question({
-    question : "Voce ou algum funcionario fica boa parte do tempo fora da empresa em clientes ou vendendo?",
+    question : "Em que banco sua empresa tem conta aberta?",
     answers  : [
-        {value : "Nao"},
-        {value : "So 1"},
-        {value : "Ate 3"},
-        {value : "Ate 5"},
-        {value : "6 ou mais"}
+        {value : "Itau"},
+        {value : "Banco do Brasil"},
+        {value : "Bradesco"},
+        {value : "Santander"},
+        {value : "Caixa"}
+        {value : "Outros"}
     ]
 });
 
