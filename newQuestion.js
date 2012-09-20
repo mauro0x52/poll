@@ -1,14 +1,14 @@
 var model = require('./model.js');
 
 var question = new model.Question({
-    question : "Em que banco sua empresa tem conta aberta?",
+    question : "Em qual das areas voce sente falta de qualificacao dos seus funcionarios?",
     answers  : [
-        {value : "Itau"},
-        {value : "Banco do Brasil"},
-        {value : "Bradesco"},
-        {value : "Santander"},
-        {value : "Caixa"},
-        {value : "Outros"}
+        {value : "Informatica"},
+        {value : "Pacote Office"},
+        {value : "Linguas"},
+        {value : "Administrativo"},
+        {value : "Vendas"},
+        {value : "Nenhuma"}
     ]
 });
 
