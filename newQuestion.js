@@ -7,7 +7,7 @@ var question = new model.Question({
         {value : "Banco do Brasil"},
         {value : "Bradesco"},
         {value : "Santander"},
-        {value : "Caixa"}
+        {value : "Caixa"},
         {value : "Outros"}
     ]
 });
