@@ -1,14 +1,14 @@
 var model = require('./model.js');
 
 var question = new model.Question({
-    question : "Em qual das areas voce sente falta de qualificacao dos seus funcionarios?",
+    question : "Você possui algum plano de saude empresarial?",
     answers  : [
-        {value : "Informatica"},
-        {value : "Pacote Office"},
-        {value : "Linguas"},
-        {value : "Administrativo"},
-        {value : "Vendas"},
-        {value : "Nenhuma"}
+        {value : "Nao e nao tenho interesse"},
+        {value : "Nao, mas tenho interesse"},
+        {value : "Nao, meu plano e pessoa fisica"},
+        {value : "Sim, so plano odontologico"},
+        {value : "Sim, so plano de saude"},
+        {value : "Sim, completo (odontologico e saude)"}
     ]
 });
 
