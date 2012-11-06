@@ -1,7 +1,7 @@
 var model = require('./model.js');
 
 var question = new model.Question({
-    question : "Você possui algum plano de saude empresarial?",
+    question : "Voce possui algum plano de saude empresarial?",
     answers  : [
         {value : "Nao e nao tenho interesse"},
         {value : "Nao, mas tenho interesse"},
