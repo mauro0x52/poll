@@ -1,14 +1,14 @@
 var model = require('./model.js');
 
 var question = new model.Question({
-    question : "Voce possui algum plano de saude empresarial?",
+    question : "Quantas pessoas (incluindo voce) trabalham na sua empresa?",
     answers  : [
-        {value : "Nao e nao tenho interesse"},
-        {value : "Nao, mas tenho interesse"},
-        {value : "Nao, meu plano e pessoa fisica"},
-        {value : "Sim, so plano odontologico"},
-        {value : "Sim, so plano de saude"},
-        {value : "Sim, completo (odontologico e saude)"}
+        {value : "1"},
+        {value : "2"},
+        {value : "De 3 a 5"},
+        {value : "De 6 a 10"},
+        {value : "De 11 a 15"},
+        {value : "Mais de 15"}
     ]
 });
 
