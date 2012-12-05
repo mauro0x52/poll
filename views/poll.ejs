@@ -45,7 +45,7 @@ function quiz(params)
                         success: function(data){
                             if(data.error !== '') $('.quiz_validation').html(data.error);
                             else{
-		                $(target).html('<span class="follow_up">Falando em saude, quer ser altamente eficiente, mas manter a sua qualidade de vida? De uma olhada nesse artigo: <a href="http://www.saiadolugar.com.br/dia-a-dia-do-empreendedor/dicas-para-empreender-e-manter-a-qualidade-de-vida" target="_blank">Dicas para empreender e manter a qualidade de vida</a></span>');
+		                $(target).html('<span class="follow_up">Quer saber como manter a sua equipe sempre produtiva?</br> De uma olhada nesse artigo: <a href="http://www.saiadolugar.com.br/lideranca/4-dicas-para-animar-a-equipe-da-sua-empresa/" target="_blank">4 dicas para animar a equipe da sua empresa</a></span>');
 
 				$('#follow_up_poll').click(function(){
 				    params.followup(questionId, option);
