@@ -1,14 +1,13 @@
 var model = require('./model.js');
 
 var question = new model.Question({
-    question : "Quantas pessoas (incluindo voce) trabalham na sua empresa?",
+    question : "Voce utiliza algum tipo de vale beneficio para seus funcionarios, como vale alimentacao ou refeicao/restaurante?",
     answers  : [
-        {value : "1"},
-        {value : "2"},
-        {value : "De 3 a 5"},
-        {value : "De 6 a 10"},
-        {value : "De 11 a 15"},
-        {value : "Mais de 15"}
+        {value : "Nao"},
+        {value : "Sim, da Ticket"},
+        {value : "Sim, da Alelo (Visa Vale)"},
+        {value : "Sim, da Sodexo"},
+        {value : "Sim, outros"}
     ]
 });
 
