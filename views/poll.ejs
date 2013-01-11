@@ -45,7 +45,7 @@ function quiz(params)
                         success: function(data){
                             if(data.error !== '') $('.quiz_validation').html(data.error);
                             else{
-		                $(target).html('<span class="follow_up">Quer saber como manter a sua equipe sempre produtiva?</br> De uma olhada nesse artigo: <a href="http://www.saiadolugar.com.br/lideranca/4-dicas-para-animar-a-equipe-da-sua-empresa/" target="_blank">4 dicas para animar a equipe da sua empresa</a></span>');
+		                $(target).html('<span class="follow_up">Obrigado</span>');
 
 				$('#follow_up_poll').click(function(){
 				    params.followup(questionId, option);
