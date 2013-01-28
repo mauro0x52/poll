@@ -1,13 +1,13 @@
 var model = require('./model.js');
 
 var question = new model.Question({
-    question : "Voce utiliza algum tipo de vale beneficio para seus funcionarios, como vale alimentacao ou refeicao/restaurante?",
+    question : "Em que faixa de faturamento anual sua empresa se encaixa?",
     answers  : [
-        {value : "Nao"},
-        {value : "Sim, da Ticket"},
-        {value : "Sim, da Alelo (Visa Vale)"},
-        {value : "Sim, da Sodexo"},
-        {value : "Sim, outros"}
+        {value : "Ate R$ 500 mil/ano"},
+        {value : "Ate R$ 1 milhqo/ano"},
+        {value : "Ate R$ 5 milhoes/ano"},
+        {value : "Ate R$ 10 milhoes/ano"},
+        {value : "Mais de R$ 10 milhoes/ano"}
     ]
 });
 
