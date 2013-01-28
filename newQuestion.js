@@ -4,7 +4,7 @@ var question = new model.Question({
     question : "Em que faixa de faturamento anual sua empresa se encaixa?",
     answers  : [
         {value : "Ate R$ 500 mil/ano"},
-        {value : "Ate R$ 1 milhqo/ano"},
+        {value : "Ate R$ 1 milhao/ano"},
         {value : "Ate R$ 5 milhoes/ano"},
         {value : "Ate R$ 10 milhoes/ano"},
         {value : "Mais de R$ 10 milhoes/ano"}
