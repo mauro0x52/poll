@@ -1,13 +1,13 @@
 var model = require('./model.js');
 
 var question = new model.Question({
-    question : "Em que faixa de faturamento anual sua empresa se encaixa?",
+    question : "Sua empresa tem algum plano empresarial de telefonia e internet movel (celulares ou modem)?",
     answers  : [
-        {value : "Ate R$ 500 mil/ano"},
-        {value : "Ate R$ 1 milhao/ano"},
-        {value : "Ate R$ 5 milhoes/ano"},
-        {value : "Ate R$ 10 milhoes/ano"},
-        {value : "Mais de R$ 10 milhoes/ano"}
+        {value : "Sim, da Oi"},
+        {value : "Sim, da Claro"},
+        {value : "Sim, da TIM"},
+        {value : "Sim, de outra empresa"},
+        {value : "Nao tenho nenhum plano empresarial de telefonia movel"}
     ]
 });
 
