@@ -1,14 +1,16 @@
 var model = require('./model.js');
 
 var question = new model.Question({
-    question : "Sua empresa possui algum plano empresarial de telefone fixo, internet e/ou TV?",
+    question : "Em relacao ao vale transporte de seus funcionarios, como voce o oferece?",
     answers  : [
-        {value : "Sim, da Vivo (Telefônica)"},
-        {value : "Sim, da Claro ou Embratel"},
-        {value : "Sim, da TIM ou Intelig"},
-        {value : "Sim, da Oi"},
-        {value : "Sim, de outra empresa"},
-        {value : "Nao tenho nenhum plano empresarial de telefonia fica, internet ou TV"}
+        {value : "Pago em dinheiro/deposito como ajuda de custo"},
+        {value : "Incluo no salario mesmo, sem separacao"},
+        {value : "Pago atraves do vale transporte municipal"},
+        {value : "Pago atraves do vale transporte da Ticket"},
+        {value : "Pago atraves do vale transporte da Visa Vale"},
+        {value : "Pago atraves do vale transporte da Sodexo"},
+        {value : "Pago atraves de uma outra empresa que faz a gestao"},
+        {value : "Nao pago vale transporte"}
     ]
 });
 
