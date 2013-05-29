@@ -1,16 +1,15 @@
 var model = require('./model.js');
 
 var question = new model.Question({
-    question : "Em relacao ao vale transporte de seus funcionarios, como voce o oferece?",
+    question : "Em que faixa de faturamento anual a sua empresa se encaixa?",
     answers  : [
-        {value : "Pago em dinheiro/deposito como ajuda de custo"},
-        {value : "Incluo no salario mesmo, sem separacao"},
-        {value : "Pago atraves do vale transporte municipal"},
-        {value : "Pago atraves do vale transporte da Ticket"},
-        {value : "Pago atraves do vale transporte da Visa Vale"},
-        {value : "Pago atraves do vale transporte da Sodexo"},
-        {value : "Pago atraves de uma outra empresa que faz a gestao"},
-        {value : "Nao pago vale transporte"}
+        {value : "Ate RS 50 mil/ano"},
+        {value : "Ate RS 100 mil/ano"},
+        {value : "Ate RS 200 mil/ano"},
+        {value : "Ate RS 300 mil/ano"},
+        {value : "Ate RS 500 mil/ano"},
+        {value : "Ate RS 1 milhao/ano"},
+        {value : "Mais de RS 1 milhao/ano"}
     ]
 });
 
