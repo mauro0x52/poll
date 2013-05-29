@@ -45,7 +45,7 @@ function quiz(params)
                         success: function(data){
                             if(data.error !== '') $('.quiz_validation').html(data.error);
                             else{
-		                $(target).html('<span class="follow_up">Obrigado</span>');
+		                $(target).html('<span class="follow_up">Muito obrigado por sua resposta. Caso queira nos ajudar a conhecer outros aspectos do seu negocio, responda nossa enquete em http://goo.gl/Ue39z</span>');
 
 				$('#follow_up_poll').click(function(){
 				    params.followup(questionId, option);
