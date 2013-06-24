@@ -1,15 +1,23 @@
 var model = require('./model.js');
 
 var question = new model.Question({
-    question : "Em que faixa de faturamento anual a sua empresa se encaixa?",
+    question : "Qual a marca do seu computador?",
     answers  : [
-        {value : "Ate RS 50 mil/ano"},
-        {value : "Ate RS 100 mil/ano"},
-        {value : "Ate RS 200 mil/ano"},
-        {value : "Ate RS 300 mil/ano"},
-        {value : "Ate RS 500 mil/ano"},
-        {value : "Ate RS 1 milhao/ano"},
-        {value : "Mais de RS 1 milhao/ano"}
+        {value : "1. HP"},
+        {value : "2. Dell"},
+        {value : "3. Lenovo"},
+        {value : "4. Positivo"},
+        {value : "5. Samsung"},
+        {value : "6. Sony"},
+        {value : "7. Acer"},
+        {value : "8. Apple"},
+        {value : "9. Asus"},
+        {value : "10. Itautec"},
+        {value : "11. Semp Toshiba (STI)"},
+        {value : "12. LG"},
+        {value : "13. CCE"},
+        {value : "14. Montado (sem marca)"},
+        {value : "15. Outra marca"}
     ]
 });
 
