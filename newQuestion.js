@@ -1,3 +1,4 @@
+console.log("Criando nova enquete");
 var model = require('./model.js');
 
 var question = new model.Question({
@@ -21,17 +22,22 @@ var question = new model.Question({
     ]
 });
 
+console.log("Procurando perguntas antigas");
 model.Question.find(function(err, questions) {
     var i;
 
     if (err) console.log(err);
     
+    console.log("Removendo perguntas antigas");
     for (i = 0; i < questions.length; i ++) {
         questions[i].remove();
     }
     
+    console.log("Salvando nova pergunta");
     question.save(function(err){
         if(err) console.log(err)
         else console.log("Pergunta cadastrada com sucesso!");
     });
 });
+
+console.log("Fim");

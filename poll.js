@@ -49,7 +49,7 @@ app.get('/panel', function(request,response){
 
 app.get('/(load)?', function(request,response){
     response.header('Content-Type', 'text/javascript');
-    response.render('poll.ejs', {baseUrl : 'http://' + config.baseUrl + ':' + config.port + '/'});
+    response.render('poll.ejs', {baseUrl : 'http://' + config.baseUrl + '/'});
 });
 
 /*----------------------------------------------------------------------------*/
